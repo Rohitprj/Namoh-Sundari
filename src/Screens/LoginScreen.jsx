@@ -41,12 +41,9 @@ const LoginScreen = () => {
       return;
     }
 
-    setLoading(true); // Start loading
+    setLoading(true);
 
     try {
-      // const requestBody = new URLSearchParams();
-      // requestBody.append('email', email);
-      // requestBody.append('password', password);
       const requestBody = {
         email: email,
         password: password,
