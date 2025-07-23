@@ -1,0 +1,292 @@
+{
+  "success": true,
+  "data": [
+    {
+      "id": 43,
+      "name": "Tshirt Black",
+      "slug": "tshirt-black",
+      "description": "Mens Black Tshirt durable and high quality",
+      "mainCategoryId": 23,
+      "subCategoryId": 19,
+      "subSubCategoryId": 19,
+      "vendorId": 79,
+      "createdAt": "2025-07-16T09:19:51.422Z",
+      "updatedAt": "2025-07-16T09:19:51.422Z",
+      "isTrending": false,
+      "isRecommended": false,
+      "isSale": false,
+      "isPopular": false,
+      "mainCategory": {
+        "id": 23,
+        "name": "Fashion",
+        "slug": "fashion",
+        "description": "Leriya Fashion is the ultimate destination for occasionwear, offering hand-embellished designs and feminine details in luxurious fabrics. Introducing our elegant and versatile Rayon Solid Button Front Shirt Dress with Roll Tab Sleeve & Collared Neck Flared for Women. This dress combines classic style with modern comfort, making it a must-have addition to your wardrobe. Crafted from Best-quality rayon fabric, this dress offers a soft and lightweight feel, ensuring all-day comfort. The solid color adds a touch of sophistication and versatility, making it easy to dress up or down for various occasions. The button front design adds a polished look to the dress, while the collared neck enhances its chic appeal. The flared silhouette creates a flattering fit that accentuates your curves and allows for easy movement. One of the standout features of this dress is the roll tab sleeves, which offer flexibility in styling. You can effortlessly switch between long sleeves and three-quarter sleeves, adapting to changing weather or personal preference. This shirt dress is perfect for both casual and semi-formal occasions. Pair it with sandals or sneakers for a relaxed daytime look, or dress it up with heels and accessories for a more sophisticated ensemble. Whether you're heading to the office, on a brunch date, or at a social gathering, this dress is a versatile choice. Revamp your wardrobe with this stylish and comfortable shirt dress, and elevate your fashion game. Please refer to the size chart to find your perfect fit.",
+        "imgUrl": "/uploads/7ec2483ae2254eb1.jpg",
+        "createdAt": "2025-07-03T06:00:20.019Z",
+        "updatedAt": "2025-07-03T06:01:39.743Z"
+      },
+      "subCategory": {
+        "id": 19,
+        "mainCategoryId": 23,
+        "name": "Men's Clothing",
+        "slug": "mens-clothing",
+        "description": "Ace weekend dressing in this blue solid Polo Neck T-shirt from Allen Solly by Allen Solly.",
+        "imgUrl": "/uploads/dc9b556bba643efd.jpg",
+        "createdAt": "2025-07-03T06:01:27.607Z",
+        "updatedAt": "2025-07-03T06:02:08.185Z"
+      },
+      "subSubCategory": {
+        "id": 19,
+        "subCategoryId": 19,
+        "name": "T-Shirts",
+        "slug": "t-shirts-1",
+        "description": " The minimal detailing, flattering fit and fine cotton fabric ensure it will be a weekend favorite. ",
+        "imgUrl": "/uploads/ed36cdd6c64f7e8e.jpg",
+        "createdAt": "2025-07-03T06:03:41.034Z",
+        "updatedAt": "2025-07-03T06:03:41.034Z"
+      },
+      "variants": [
+        {
+          "id": 116,
+          "productId": 43,
+          "sku": "NFPP123456",
+          "price": "1299",
+          "sellingprice": "1999",
+          "stock": 89,
+          "images": [
+            "/uploads/538a0db8bdbd7249.webp"
+          ],
+          "height": null,
+          "weight": null,
+          "length": null,
+          "breadth": null,
+          "createdAt": "2025-07-16T09:19:51.425Z",
+          "updatedAt": "2025-07-16T09:19:51.425Z",
+          "attributes": [
+            {
+              "id": 116,
+              "variantId": 116,
+              "key": "color",
+              "value": "Black"
+            },
+            {
+              "id": 117,
+              "variantId": 116,
+              "key": "size",
+              "value": "medium"
+            }
+          ]
+        }
+      ],
+      "_count": {
+        "ProductReview": 0
+      },
+      "ProductReview": [],
+      "averageRating": null,
+      "isWishlisted": false
+    },
+    {
+      "id": 18,
+      "name": "Xiaomi 138 cm (55 inch) FX Ultra HD 4K Smart LED Fire TV L55MB-FIN",
+      "slug": "xiaomi-138-cm-(55-inch)-fx-ultra-hd-4k-smart-led-fire-tv-l55mb-fin-1",
+      "description": "My Product",
+      "mainCategoryId": 23,
+      "subCategoryId": 19,
+      "subSubCategoryId": 19,
+      "vendorId": 2,
+      "createdAt": "2025-07-03T13:03:57.503Z",
+      "updatedAt": "2025-07-04T05:59:05.937Z",
+      "isTrending": false,
+      "isRecommended": false,
+      "isSale": false,
+      "isPopular": false,
+      "mainCategory": {
+        "id": 23,
+        "name": "Fashion",
+        "slug": "fashion",
+        "description": "Leriya Fashion is the ultimate destination for occasionwear, offering hand-embellished designs and feminine details in luxurious fabrics. Introducing our elegant and versatile Rayon Solid Button Front Shirt Dress with Roll Tab Sleeve & Collared Neck Flared for Women. This dress combines classic style with modern comfort, making it a must-have addition to your wardrobe. Crafted from Best-quality rayon fabric, this dress offers a soft and lightweight feel, ensuring all-day comfort. The solid color adds a touch of sophistication and versatility, making it easy to dress up or down for various occasions. The button front design adds a polished look to the dress, while the collared neck enhances its chic appeal. The flared silhouette creates a flattering fit that accentuates your curves and allows for easy movement. One of the standout features of this dress is the roll tab sleeves, which offer flexibility in styling. You can effortlessly switch between long sleeves and three-quarter sleeves, adapting to changing weather or personal preference. This shirt dress is perfect for both casual and semi-formal occasions. Pair it with sandals or sneakers for a relaxed daytime look, or dress it up with heels and accessories for a more sophisticated ensemble. Whether you're heading to the office, on a brunch date, or at a social gathering, this dress is a versatile choice. Revamp your wardrobe with this stylish and comfortable shirt dress, and elevate your fashion game. Please refer to the size chart to find your perfect fit.",
+        "imgUrl": "/uploads/7ec2483ae2254eb1.jpg",
+        "createdAt": "2025-07-03T06:00:20.019Z",
+        "updatedAt": "2025-07-03T06:01:39.743Z"
+      },
+      "subCategory": {
+        "id": 19,
+        "mainCategoryId": 23,
+        "name": "Men's Clothing",
+        "slug": "mens-clothing",
+        "description": "Ace weekend dressing in this blue solid Polo Neck T-shirt from Allen Solly by Allen Solly.",
+        "imgUrl": "/uploads/dc9b556bba643efd.jpg",
+        "createdAt": "2025-07-03T06:01:27.607Z",
+        "updatedAt": "2025-07-03T06:02:08.185Z"
+      },
+      "subSubCategory": {
+        "id": 19,
+        "subCategoryId": 19,
+        "name": "T-Shirts",
+        "slug": "t-shirts-1",
+        "description": " The minimal detailing, flattering fit and fine cotton fabric ensure it will be a weekend favorite. ",
+        "imgUrl": "/uploads/ed36cdd6c64f7e8e.jpg",
+        "createdAt": "2025-07-03T06:03:41.034Z",
+        "updatedAt": "2025-07-03T06:03:41.034Z"
+      },
+      "variants": [
+        {
+          "id": 91,
+          "productId": 18,
+          "sku": "hello",
+          "price": "4500",
+          "sellingprice": "3999.99",
+          "stock": 34,
+          "images": [
+            "/uploads/0af15aa8e6616272.jpg",
+            "/uploads/8fedf1e79995772d.jpg",
+            "/uploads/f643505702d951c3.jpg"
+          ],
+          "height": null,
+          "weight": null,
+          "length": null,
+          "breadth": null,
+          "createdAt": "2025-07-04T05:59:05.946Z",
+          "updatedAt": "2025-07-04T05:59:05.946Z",
+          "attributes": [
+            {
+              "id": 87,
+              "variantId": 91,
+              "key": "color",
+              "value": "Red"
+            },
+            {
+              "id": 88,
+              "variantId": 91,
+              "key": "size",
+              "value": "Black"
+            }
+          ]
+        }
+      ],
+      "_count": {
+        "ProductReview": 1
+      },
+      "ProductReview": [
+        {
+          "stars": 4
+        }
+      ],
+      "averageRating": 4,
+      "isWishlisted": false
+    },
+    {
+      "id": 14,
+      "name": "LEOTUDE Men's Oversized Half Sleeve Round Neck T-Shirt (PO3_FS49_BSD_SUL_LSNLS_P_Beige, Maron_3XL) ",
+      "slug": "leotude-men's-oversized-half-sleeve-round-neck-t-shirt-(po3_fs49_bsd_sul_lsnls_p_beige-maron_3xl)",
+      "description": "\r\n    Pattern: Printed\r\n    Fabric: Cotton Blend\r\n    Color: Black-Maroon-Neon\r\n    Oversized T-shirt, loose fit, so very comfortable to wear, also looks very trendy & classy\r\n    Made of soft and breathable cotton blend fabric for comfort and durability\r\n",
+      "mainCategoryId": 23,
+      "subCategoryId": 19,
+      "subSubCategoryId": 19,
+      "vendorId": 3,
+      "createdAt": "2025-07-03T07:36:34.738Z",
+      "updatedAt": "2025-07-03T12:59:21.891Z",
+      "isTrending": false,
+      "isRecommended": false,
+      "isSale": false,
+      "isPopular": false,
+      "mainCategory": {
+        "id": 23,
+        "name": "Fashion",
+        "slug": "fashion",
+        "description": "Leriya Fashion is the ultimate destination for occasionwear, offering hand-embellished designs and feminine details in luxurious fabrics. Introducing our elegant and versatile Rayon Solid Button Front Shirt Dress with Roll Tab Sleeve & Collared Neck Flared for Women. This dress combines classic style with modern comfort, making it a must-have addition to your wardrobe. Crafted from Best-quality rayon fabric, this dress offers a soft and lightweight feel, ensuring all-day comfort. The solid color adds a touch of sophistication and versatility, making it easy to dress up or down for various occasions. The button front design adds a polished look to the dress, while the collared neck enhances its chic appeal. The flared silhouette creates a flattering fit that accentuates your curves and allows for easy movement. One of the standout features of this dress is the roll tab sleeves, which offer flexibility in styling. You can effortlessly switch between long sleeves and three-quarter sleeves, adapting to changing weather or personal preference. This shirt dress is perfect for both casual and semi-formal occasions. Pair it with sandals or sneakers for a relaxed daytime look, or dress it up with heels and accessories for a more sophisticated ensemble. Whether you're heading to the office, on a brunch date, or at a social gathering, this dress is a versatile choice. Revamp your wardrobe with this stylish and comfortable shirt dress, and elevate your fashion game. Please refer to the size chart to find your perfect fit.",
+        "imgUrl": "/uploads/7ec2483ae2254eb1.jpg",
+        "createdAt": "2025-07-03T06:00:20.019Z",
+        "updatedAt": "2025-07-03T06:01:39.743Z"
+      },
+      "subCategory": {
+        "id": 19,
+        "mainCategoryId": 23,
+        "name": "Men's Clothing",
+        "slug": "mens-clothing",
+        "description": "Ace weekend dressing in this blue solid Polo Neck T-shirt from Allen Solly by Allen Solly.",
+        "imgUrl": "/uploads/dc9b556bba643efd.jpg",
+        "createdAt": "2025-07-03T06:01:27.607Z",
+        "updatedAt": "2025-07-03T06:02:08.185Z"
+      },
+      "subSubCategory": {
+        "id": 19,
+        "subCategoryId": 19,
+        "name": "T-Shirts",
+        "slug": "t-shirts-1",
+        "description": " The minimal detailing, flattering fit and fine cotton fabric ensure it will be a weekend favorite. ",
+        "imgUrl": "/uploads/ed36cdd6c64f7e8e.jpg",
+        "createdAt": "2025-07-03T06:03:41.034Z",
+        "updatedAt": "2025-07-03T06:03:41.034Z"
+      },
+      "variants": [
+        {
+          "id": 54,
+          "productId": 14,
+          "sku": " Cotton Blend ",
+          "price": "699",
+          "sellingprice": "1599",
+          "stock": 100,
+          "images": [
+            "/uploads/94667d987d3bdf19.jpg",
+            "/uploads/1fc5a083f8b38c36.jpg",
+            "/uploads/83cc09ae8b12c060.jpg"
+          ],
+          "height": null,
+          "weight": null,
+          "length": null,
+          "breadth": null,
+          "createdAt": "2025-07-03T12:59:21.910Z",
+          "updatedAt": "2025-07-03T12:59:21.910Z",
+          "attributes": [
+            {
+              "id": 14,
+              "variantId": 54,
+              "key": "color",
+              "value": "Red"
+            },
+            {
+              "id": 15,
+              "variantId": 54,
+              "key": "Size",
+              "value": "M"
+            }
+          ]
+        },
+        {
+          "id": 55,
+          "productId": 14,
+          "sku": "hello",
+          "price": "5200",
+          "sellingprice": "4499.98",
+          "stock": 20,
+          "images": [],
+          "height": null,
+          "weight": null,
+          "length": null,
+          "breadth": null,
+          "createdAt": "2025-07-03T12:59:21.914Z",
+          "updatedAt": "2025-07-03T12:59:21.914Z",
+          "attributes": [
+            {
+              "id": 16,
+              "variantId": 55,
+              "key": "color",
+              "value": "Black"
+            }
+          ]
+        }
+      ],
+      "_count": {
+        "ProductReview": 1
+      },
+      "ProductReview": [
+        {
+          "stars": 5
+        }
+      ],
+      "averageRating": 5,
+      "isWishlisted": false
+    }
+  ]
+}
