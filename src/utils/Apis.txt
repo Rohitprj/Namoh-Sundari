@@ -1,0 +1,45 @@
+1) Get = http://103.119.171.213:3001/api/web/get-all-category
+2) Post = http://103.119.171.213:3001/api/public/user-register
+
+Payload
+name = Rohit Kumar
+email = rohit@gmail.com
+password = 123456
+
+Response
+{
+    "success": true,
+    "message": "Registration successful.",
+    "user": {
+        "id": 10,
+        "name": "Rohit Kumar",
+        "email": "rohit@gmail.com"
+    }
+}
+
+3) Post = http://103.119.171.213:3001/api/public/user-login
+
+Payload 
+email = rohit@gmail.com
+password = 123456
+
+Response
+{
+    "success": true,
+    "message": "Login successful",
+    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEwLCJyb2xlIjoiVVNFUiIsImlhdCI6MTc1MzI2NTY4NCwiZXhwIjoxNzUzODcwNDg0fQ.IYZeLEL0u2kMQ4s7K1ou1ciD98A1qC1lP9-6n0qs9kU",
+    "user": {
+        "id": 10,
+        "name": "Rohit Kumar",
+        "email": "rohit@gmail.com",
+        "phone": null,
+        "status": "ACTIVE",
+        "role": "USER",
+        "createdAt": "2025-07-23T09:47:50.746Z",
+        "updatedAt": "2025-07-23T09:47:50.746Z",
+        "otp": null,
+        "otp_expiry": null
+    }
+}
+
+4) Get = http://103.119.171.213:3001/api/web/get-all-category

@@ -81,7 +81,7 @@ import {getUserData} from './tokenStorage'; // Import the getUserData function
 //    - timeout: The maximum time in milliseconds a request can take before being aborted.
 //    - headers: Default headers to be sent with every request.
 const axiosInstance = axios.create({
-  baseURL: 'https://shopinger.co.in/api/', // Corrected to end with a single slash
+  baseURL: 'http://103.119.171.213:3001/api/', // Corrected to end with a single slash
   timeout: 10000, // 10 seconds
   headers: {
     'Content-Type': 'application/json',
