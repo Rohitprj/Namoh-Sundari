@@ -1707,8 +1707,8 @@ const App = ({navigation}) => {
         {/* Header */}
         <View style={styles.header}>
           <Image
-            source={require('../../assets/images/logo.png')}
-            style={styles.logo}
+            source={require('../../assets/namo-logo.png')}
+            style={{...styles.logo, width: 60, height: 60}}
           />
 
           <View style={styles.headerRight}>

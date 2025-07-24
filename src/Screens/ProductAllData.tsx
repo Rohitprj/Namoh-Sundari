@@ -1318,16 +1318,16 @@ export default function ProductAllData({navigation, route}) {
           <Icon name="arrow-left" size={24} color="#333" />
         </TouchableOpacity>
         <Image
-          source={require('../../assets/images/logo.png')}
-          style={styles.logo}
+          source={require('../../assets/namo-logo.png')}
+          style={{...styles.logo, width: 80, height: 80}}
         />
         <View style={styles.headerRight}>
-          <TouchableOpacity style={styles.headerAvatarContainer}>
+          {/* <TouchableOpacity style={styles.headerAvatarContainer}>
             <Image
               source={require('../../assets/images/Profile.png')}
               style={styles.logo}
             />
-          </TouchableOpacity>
+          </TouchableOpacity> */}
         </View>
       </View>
 
@@ -1427,7 +1427,7 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     justifyContent: 'space-between',
     alignItems: 'center',
-    padding: 15,
+    padding: 5,
     backgroundColor: '#fff',
     borderBottomWidth: 1,
     borderBottomColor: '#eee',
