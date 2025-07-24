@@ -95,11 +95,11 @@ const ShoppingBag = ({navigation}) => {
             {item.variant?.product?.name || 'Product Name N/A'}
           </Text>
           <Text style={styles.productDescription}>
-            {item.variant?.product?.description
+            {/* {item.variant?.product?.description
               ? item.variant.product.description.length > 50
                 ? `${item.variant.product.description.substring(0, 50)}...`
                 : item.variant.product.description
-              : 'Description N/A'}
+              : 'Description N/A'} */}
           </Text>
           <View style={styles.dropdownContainer}>
             <View style={styles.dropdown}>
@@ -116,7 +116,7 @@ const ShoppingBag = ({navigation}) => {
           <Text style={styles.deliveryText}>
             Delivery by <Text style={styles.deliveryDate}>{deliveryDate}</Text>
           </Text>
-          <TouchableOpacity
+          {/* <TouchableOpacity
             style={styles.addReviewButton}
             onPress={() =>
               navigation.navigate('AddReview', {
@@ -125,7 +125,7 @@ const ShoppingBag = ({navigation}) => {
               })
             }>
             <Text style={styles.addReviewButtonText}>Add Review</Text>
-          </TouchableOpacity>
+          </TouchableOpacity> */}
         </View>
       </View>
     );
