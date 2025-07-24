@@ -1834,7 +1834,7 @@ const styles = StyleSheet.create({
   dynamicCategoriesSection: {
     backgroundColor: '#fff',
     borderRadius: 10,
-    padding: 15,
+    padding: 10,
     marginBottom: 20,
     shadowColor: '#000',
     shadowOffset: {width: 0, height: 1},
@@ -1862,8 +1862,8 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     backgroundColor: '#f9f9f9',
     borderRadius: 8,
-    paddingVertical: 15,
-    margin: 5, // Small margin around each item
+    paddingVertical: 10,
+    margin: 3, // Small margin around each item
     maxWidth: (width - 30 - 30) / 3, // (screen_width - container_padding_x2 - item_margin_x4) / num_columns
     minWidth: (width - 30 - 30) / 3,
     aspectRatio: 1, // Makes the card square
