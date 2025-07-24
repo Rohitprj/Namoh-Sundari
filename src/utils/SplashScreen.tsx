@@ -8,9 +8,9 @@ const SplashScreen = () => {
       {/* Optional: Adjust status bar for the splash screen */}
       <StatusBar backgroundColor="#FFFFFF" barStyle="dark-content" />
       <Image
-        source={require('../../assets/ShopingerLogo.png')} // <-- IMPORTANT: Adjust this path relative to THIS FILE
+        source={require('../../assets/namo-logo.png')} 
         style={styles.logo}
-        resizeMode="contain" // Ensures the logo fits within its bounds
+        resizeMode="contain" 
       />
     </View>
   );
@@ -21,11 +21,11 @@ const styles = StyleSheet.create({
     flex: 1,
     justifyContent: 'center',
     alignItems: 'center',
-    backgroundColor: '#FFFFFF', // Your desired splash screen background color
+    backgroundColor: '#FFFFFF', 
   },
   logo: {
-    width: 200, // Adjust logo width as needed
-    height: 200, // Adjust logo height as needed
+    width: 200,
+    height: 200, 
   },
 });
 

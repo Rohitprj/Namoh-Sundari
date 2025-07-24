@@ -1,4 +1,5 @@
 import React from 'react';
+import { Image } from 'react-native';
 import {
   StyleSheet,
   View,
@@ -19,18 +20,18 @@ const SplashScreen = ({navigation}) => {
 
   return (
     <View style={styles.container}>
-      <ImageBackground
-        source={require('../../assets/images/GetStartedBack.jpg')} // Your specified background image path
+      <Image
+        source={require('../../assets/namo-logo.png')} // Your specified background image path
         style={styles.backgroundImage}
-        resizeMode="cover" // Ensures the image covers the entire background
-      >
+        // resizeMode="cover" // Ensures the image covers the entire background
+      />
         <View style={styles.overlay}>
-          <View style={styles.textContainer}>
+          {/* <View style={styles.textContainer}>
             <Text style={styles.title}>You want</Text>
             <Text style={styles.titleBold}>Authentic, here</Text>
             <Text style={styles.titleBold}>you go!</Text>
             <Text style={styles.subtitle}>Find it here, buy it now!</Text>
-          </View>
+          </View> */}
 
           {/* Get Started Button */}
           <TouchableOpacity
@@ -39,7 +40,7 @@ const SplashScreen = ({navigation}) => {
             <Text style={styles.buttonText}>Get Started</Text>
           </TouchableOpacity>
         </View>
-      </ImageBackground>
+      {/* </Image> */}
     </View>
   );
 };
@@ -67,14 +68,14 @@ const styles = StyleSheet.create({
   title: {
     fontWeight: 'bold',
     fontSize: 30,
-    color: 'white',
+    color: 'black',
     textAlign: 'center',
     lineHeight: 38, // Enhances readability of multi-line text
   },
   titleBold: {
     fontSize: 30,
     fontWeight: 'bold',
-    color: 'white',
+    color: 'black',
     textAlign: 'center',
     lineHeight: 38,
   },
