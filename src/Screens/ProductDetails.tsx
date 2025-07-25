@@ -507,13 +507,13 @@ const ProductDetailsScreen = ({navigation, route}) => {
           </View>
         </View>
 
-        {/* Reviews Section */}
-        <View style={styles.reviewsSection}>
+
+        {/* <View style={styles.reviewsSection}>
           <View style={styles.reviewsHeader}>
-            {/* Dynamic total reviews */}
+            
             <Text style={styles.reviewsTitle}>{totalReviewsCount} Reviews</Text>
             <View style={styles.reviewsOverallRating}>
-              {/* Dynamic average rating */}
+              
               <Text style={styles.reviewsOverallRatingText}>
                 {averageRating}
               </Text>
@@ -535,7 +535,7 @@ const ProductDetailsScreen = ({navigation, route}) => {
             </TouchableOpacity>
           </View>
 
-          {/* Star Distribution Bar Chart */}
+
           <View style={styles.starRatingBreakdown}>
             {[5, 4, 3, 2, 1].map(star => {
               const count = starDistribution[star] || 0;
@@ -563,9 +563,7 @@ const ProductDetailsScreen = ({navigation, route}) => {
               );
             })}
           </View>
-          {/* End Star Distribution Bar Chart */}
 
-          {/* Individual Reviews */}
           {productData.ProductReview && productData.ProductReview.length > 0 ? (
             <FlatList
               data={productData.ProductReview} // Use actual review data
@@ -579,7 +577,7 @@ const ProductDetailsScreen = ({navigation, route}) => {
               No reviews yet. Be the first to review!
             </Text>
           )}
-        </View>
+        </View> */}
       </ScrollView>
     </SafeAreaView>
   );
