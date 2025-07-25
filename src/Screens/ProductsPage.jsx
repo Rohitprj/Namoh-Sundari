@@ -1620,6 +1620,283 @@
 
 // export default App;
 
+// import React, {useEffect, useState} from 'react';
+// import {
+//   View,
+//   Text,
+//   StyleSheet,
+//   ScrollView,
+//   Image,
+//   TextInput,
+//   TouchableOpacity,
+//   Dimensions,
+//   FlatList, // Import FlatList
+//   ActivityIndicator, // Import ActivityIndicator for loading state
+// } from 'react-native';
+// import {SafeAreaView} from 'react-native-safe-area-context';
+// import axiosInstance from '../utils/AxiosInstance'; // Ensure this path is correct
+// import {getUserData} from '../utils/tokenStorage'; // Keep if used for header, otherwise remove
+// import Feather from 'react-native-vector-icons/Feather';
+
+// const {width} = Dimensions.get('window');
+
+// const IMAGE_BASE_URL = 'http://103.119.171.213:3001';
+
+// const App = ({navigation}) => {
+//   const [categories, setCategories] = useState([]);
+//   const [loadingCategories, setLoadingCategories] = useState(true);
+//   const [errorCategories, setErrorCategories] = useState(null);
+
+//   const fetchCategoriesData = async () => {
+//     try {
+//       setLoadingCategories(true);
+//       setErrorCategories(null);
+//       const response = await axiosInstance.get('/web/get-all-category');
+//       console.log('Categories data:', response.data.categories);
+//       const userData = await getUserData(); // Assuming this is correct
+//       console.log('User data at product page', userData);
+//       setCategories(response.data.categories);
+//     } catch (error) {
+//       console.error('Error fetching categories:', error);
+//       setErrorCategories('Failed to load categories. Please try again.');
+//     } finally {
+//       setLoadingCategories(false);
+//     }
+//   };
+
+//   useEffect(() => {
+//     fetchCategoriesData();
+//   }, []);
+
+//   // Simplified handleCategoryPress to directly navigate with category ID
+//   const handleCategoryPress = item => {
+//     console.log(`Navigating to products for category ID: ${item.id}`);
+//     // Navigate to 'ProductAllData' and pass the category 'id'
+//     navigation.navigate('ProductAllData', {categoryId: item.id});
+//   };
+
+//   const renderCategoryItem = ({item}) => {
+//     return (
+//       <TouchableOpacity
+//         style={styles.categoryItem}
+//         onPress={() => handleCategoryPress(item)}>
+//         <Image
+//           source={{
+//             uri: item.imgUrl
+//               ? `${IMAGE_BASE_URL}${item.imgUrl}`
+//               : 'https://placehold.co/50x50/cccccc/000000?text=No+Image',
+//           }}
+//           style={styles.categoryIcon}
+//           onError={e =>
+//             console.log(
+//               'Image loading error for category:',
+//               e.nativeEvent.error,
+//               'URL:',
+//               item.imgUrl ? `${IMAGE_BASE_URL}${item.imgUrl}` : 'N/A',
+//             )
+//           }
+//         />
+//         <Text style={styles.categoryText}>{item.name}</Text>
+//       </TouchableOpacity>
+//     );
+//   };
+
+//   return (
+//     <SafeAreaView style={styles.safeArea}>
+//       <ScrollView showsVerticalScrollIndicator={false} style={styles.container}>
+//         {/* Header */}
+//         <View style={styles.header}>
+//           <Image
+//             source={require('../../assets/namo-logo.png')}
+//             style={{...styles.logo, width: 60, height: 60}}
+//           />
+
+//           <View style={styles.headerRight}>
+//             <TouchableOpacity
+//               style={styles.headerAvatarContainer}
+//               onPress={() => navigation.navigate('ShoppingBag')}>
+//               <Image
+//                 source={require('../../assets/images/Profile.png')}
+//                 style={styles.logo}
+//               />
+//             </TouchableOpacity>
+//           </View>
+//         </View>
+
+//         {/* Search Bar */}
+//         <View style={styles.searchContainer}>
+//           <Feather
+//             size={20}
+//             name="search"
+//             color="lightgrey"
+//             style={{right: 4, bottom: 1}}
+//           />
+//           <TextInput
+//             style={styles.searchInput}
+//             placeholder="Search any product..."
+//             placeholderTextColor="#888"
+//           />
+//         </View>
+
+//         {/* Dynamic Categories Section */}
+//         <View style={styles.dynamicCategoriesSection}>
+//           <View style={styles.dynamicCategoriesHeader}>
+//             <Text style={styles.sectionTitleDynamic}>Categories</Text>
+//             {/* Back button removed as there's no nesting */}
+//           </View>
+
+//           {loadingCategories ? (
+//             <ActivityIndicator
+//               size="large"
+//               color="#ff6600"
+//               style={{marginTop: 20}}
+//             />
+//           ) : errorCategories ? (
+//             <Text style={{color: 'red', textAlign: 'center', marginTop: 20}}>
+//               {errorCategories}
+//             </Text>
+//           ) : categories.length > 0 ? (
+//             <FlatList
+//               data={categories}
+//               keyExtractor={(item, index) =>
+//                 item.id ? item.id.toString() : index.toString()
+//               }
+//               renderItem={renderCategoryItem}
+//               horizontal={false}
+//               numColumns={3} // Display in a grid
+//               showsHorizontalScrollIndicator={false}
+//               showsVerticalScrollIndicator={false}
+//               scrollEnabled={false} // Allow parent ScrollView to handle scrolling
+//               contentContainerStyle={styles.categoriesGridContainer}
+//             />
+//           ) : (
+//             <Text style={styles.noCategoriesText}>No categories found.</Text>
+//           )}
+//         </View>
+
+//         {/* render here */}
+//       </ScrollView>
+//     </SafeAreaView>
+//   );
+// };
+
+// const styles = StyleSheet.create({
+//   safeArea: {
+//     flex: 1,
+//     backgroundColor: '#fff',
+//   },
+//   container: {
+//     flex: 1,
+//     paddingHorizontal: 15,
+//     backgroundColor: '#f8f8f8', // Light background for the whole screen
+//   },
+//   header: {
+//     flexDirection: 'row',
+//     justifyContent: 'space-between',
+//     alignItems: 'center',
+//     paddingVertical: 15,
+//     backgroundColor: '#fff',
+//     marginHorizontal: -15, // counteract paddingHorizontal of container
+//     paddingHorizontal: 15,
+//     borderBottomWidth: 1,
+//     borderBottomColor: '#eee',
+//   },
+//   logo: {
+//     width: 30, // Adjust size as needed
+//     height: 30, // Adjust size as needed
+//     resizeMode: 'contain',
+//   },
+//   headerRight: {
+//     flexDirection: 'row',
+//     alignItems: 'center',
+//   },
+//   headerAvatarContainer: {
+//     marginLeft: 15,
+//   },
+//   searchContainer: {
+//     flexDirection: 'row',
+//     alignItems: 'center',
+//     backgroundColor: '#fff',
+//     borderRadius: 10,
+//     paddingHorizontal: 10,
+//     marginVertical: 15,
+//     shadowColor: '#000',
+//     shadowOffset: {width: 0, height: 1},
+//     shadowOpacity: 0.1,
+//     shadowRadius: 3,
+//     elevation: 2,
+//   },
+//   searchInput: {
+//     flex: 1,
+//     height: 45,
+//     fontSize: 16,
+//     color: '#333',
+//     paddingLeft: 10,
+//   },
+//   dynamicCategoriesSection: {
+//     backgroundColor: '#fff',
+//     borderRadius: 10,
+//     padding: 10,
+//     marginBottom: 20,
+//     shadowColor: '#000',
+//     shadowOffset: {width: 0, height: 1},
+//     shadowOpacity: 0.1,
+//     shadowRadius: 3,
+//     elevation: 2,
+//   },
+//   dynamicCategoriesHeader: {
+//     flexDirection: 'row',
+//     justifyContent: 'space-between',
+//     alignItems: 'center',
+//     marginBottom: 15,
+//   },
+//   sectionTitleDynamic: {
+//     fontSize: 18,
+//     fontWeight: 'bold',
+//     color: '#333',
+//   },
+//   categoriesGridContainer: {
+//     justifyContent: 'space-between',
+//   },
+//   categoryItem: {
+//     flex: 1,
+//     alignItems: 'center',
+//     justifyContent: 'center',
+//     backgroundColor: '#f9f9f9',
+//     borderRadius: 8,
+//     paddingVertical: 10,
+//     margin: 3, // Small margin around each item
+//     maxWidth: (width - 30 - 30) / 3, // (screen_width - container_padding_x2 - item_margin_x4) / num_columns
+//     minWidth: (width - 30 - 30) / 3,
+//     aspectRatio: 1, // Makes the card square
+//     shadowColor: '#000',
+//     shadowOffset: {width: 0, height: 0.5},
+//     shadowOpacity: 0.05,
+//     shadowRadius: 2,
+//     elevation: 1,
+//   },
+//   categoryIcon: {
+//     width: 50,
+//     height: 50,
+//     resizeMode: 'contain',
+//     marginBottom: 8,
+//   },
+//   categoryText: {
+//     fontSize: 12,
+//     fontWeight: 'bold',
+//     color: '#555',
+//     textAlign: 'center',
+//   },
+//   noCategoriesText: {
+//     textAlign: 'center',
+//     marginTop: 20,
+//     fontSize: 16,
+//     color: '#777',
+//   },
+// });
+
+// export default App;
+
 import React, {useEffect, useState} from 'react';
 import {
   View,
@@ -1773,6 +2050,38 @@ const App = ({navigation}) => {
             <Text style={styles.noCategoriesText}>No categories found.</Text>
           )}
         </View>
+
+        {/* New section for rendering 5 images */}
+        <View style={styles.imageSection}>
+          <Text style={styles.sectionTitleDynamic}>Featured Products</Text>
+          <View style={styles.imageGridContainer}>
+            {/* Image 1 */}
+            <Image
+              source={require('../../assets/home/img1.jpeg')}
+              style={styles.featuredImage}
+            />
+            {/* Image 2 */}
+            <Image
+              source={require('../../assets/home/img2.jpeg')}
+              style={styles.featuredImage}
+            />
+            {/* Image 3 */}
+            <Image
+              source={require('../../assets/home/img3.jpeg')}
+              style={styles.featuredImage}
+            />
+            {/* Image 4 */}
+            <Image
+              source={require('../../assets/home/img4.png')}
+              style={styles.featuredImage}
+            />
+            {/* Image 5 */}
+            <Image
+              source={require('../../assets/home/img5.png')}
+              style={styles.featuredImage}
+            />
+          </View>
+        </View>
       </ScrollView>
     </SafeAreaView>
   );
@@ -1890,6 +2199,33 @@ const styles = StyleSheet.create({
     marginTop: 20,
     fontSize: 16,
     color: '#777',
+  },
+  // New styles for the image section
+  imageSection: {
+    backgroundColor: '#fff',
+    borderRadius: 10,
+    padding: 10,
+    marginBottom: 20,
+    shadowColor: '#000',
+    shadowOffset: {width: 0, height: 1},
+    shadowOpacity: 0.1,
+    shadowRadius: 3,
+    elevation: 2,
+  },
+  imageGridContainer: {
+    // flexDirection: 'row',
+    // flexWrap: 'wrap',
+    // justifyContent: 'space-around',
+    marginTop: 10,
+    right: 5,
+  },
+  featuredImage: {
+    // width: (width - 30 - 40) / 2, // Adjust width for 2 images per row with padding/margin
+    width: '100%',
+    height: (width - 30 - 40) / 2, // Keep aspect ratio square
+    borderRadius: 8,
+    margin: 5,
+    resizeMode: 'cover',
   },
 });
 

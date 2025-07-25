@@ -331,18 +331,18 @@ const TabNavigator = () => {
               name={iconName}
               size={iconSize}
               color={iconColor}
-              style={
-                route.name === 'Cart'
-                  ? {
-                      backgroundColor: 'white',
-                      padding: 10,
-                      borderRadius: 50,
-                      elevation: 5,
-                      marginTop: -20,
-                      width: 45,
-                    }
-                  : {}
-              }
+              // style={
+              //   route.name === 'Cart'
+              //     ? {
+              //         backgroundColor: 'white',
+              //         padding: 10,
+              //         borderRadius: 50,
+              //         elevation: 5,
+              //         marginTop: -20,
+              //         width: 45,
+              //       }
+              //     : {}
+              // }
             />
           );
         },
@@ -352,7 +352,7 @@ const TabNavigator = () => {
       <Tab.Screen name="Home" component={ProductsPage} />
       <Tab.Screen name="Wishlist" component={Wishlist} />
       <Tab.Screen name="Cart" component={CheckoutProduct} />
-      <Tab.Screen name="Search" component={Search} />
+      {/* <Tab.Screen name="Search" component={Search} /> */}
       <Tab.Screen name="Profile" component={Settings} />
     </Tab.Navigator>
   );
