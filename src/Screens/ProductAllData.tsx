@@ -1353,9 +1353,9 @@ export default function ProductAllData({navigation, route}) {
         ) : errorProducts ? (
           <Text style={styles.itemsCount}>Error Loading Items</Text>
         ) : (
-          <Text style={styles.itemsCount}>{products.length}+ Items</Text>
+          <Text style={styles.itemsCount}>{products.length} Items</Text>
         )}
-        <View style={styles.filterActions}>
+        {/* <View style={styles.filterActions}>
           <TouchableOpacity style={styles.filterButton}>
             <Icon
               name="filter"
@@ -1374,7 +1374,7 @@ export default function ProductAllData({navigation, route}) {
             />
             <Text style={styles.filterText}>Filter</Text>
           </TouchableOpacity>
-        </View>
+        </View> */}
       </View>
 
       {/* Product Grid / Loading / Error / No Products */}
