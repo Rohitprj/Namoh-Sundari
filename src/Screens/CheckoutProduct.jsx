@@ -1146,7 +1146,6 @@
 
 // export default CheckoutPage;
 
-
 import React, {useState, useEffect, useCallback} from 'react';
 import {
   View,
@@ -1165,7 +1164,7 @@ import RazorpayCheckout from 'react-native-razorpay';
 
 import axiosInstance from '../utils/AxiosInstance';
 import {getUserData} from '../utils/tokenStorage';
-import { useIsFocused } from '@react-navigation/native';
+import {useIsFocused} from '@react-navigation/native';
 
 const CURRENT_USER_ID = 'your_actual_user_id_here';
 
@@ -1276,7 +1275,7 @@ const CheckoutCartItem = ({item, onQuantityChange, isLoading}) => {
 };
 
 const CheckoutPage = ({navigation}) => {
-   const isFocused = useIsFocused();
+  const isFocused = useIsFocused();
   const [cartItemsToDisplay, setCartItemsToDisplay] = useState([]);
   const [cartSummary, setCartSummary] = useState({
     subtotal: 0,
@@ -1318,8 +1317,8 @@ const CheckoutPage = ({navigation}) => {
 
       if (response.data) {
         const apiCartData = response.data;
-          
-        console.log("Cart Summery:::",apiCartData)
+
+        console.log('Cart Summery:::', apiCartData);
         // Update cart summary
         setCartSummary({
           subtotal: apiCartData.summary?.subtotal || 0,
@@ -1340,7 +1339,7 @@ const CheckoutPage = ({navigation}) => {
             quantity: item.quantity,
             images: item.images,
           }));
-          console.log("Map item Data:::",mappedItems)
+          console.log('Map item Data:::', mappedItems);
           setCartItemsToDisplay(mappedItems);
         } else {
           setCartItemsToDisplay([]);
@@ -1370,7 +1369,7 @@ const CheckoutPage = ({navigation}) => {
       }
       console.log('Finished fetching cart data.');
     }
-  },[]);
+  }, []);
 
   const fetchAddressData = useCallback(async () => {
     setLoadingAddress(true);
@@ -1410,7 +1409,7 @@ const CheckoutPage = ({navigation}) => {
       setLoadingAddress(false);
       console.log('Finished fetching address data.');
     }
-  },[]);
+  }, []);
 
   useEffect(() => {
     fetchCartData();
@@ -1477,7 +1476,7 @@ const CheckoutPage = ({navigation}) => {
     }
   };
 
-  const handleRazorpayPayment = async (amount) => {
+  const handleRazorpayPayment = async amount => {
     if (
       !currencyConfig.applicationData.razorpayKeyId ||
       currencyConfig.applicationData.razorpayKeyId.includes(
@@ -1513,10 +1512,10 @@ const CheckoutPage = ({navigation}) => {
         },
       );
       const res = createOrderResponse.data;
-      
-    //  console.log("Responce Order id:::",res)
+
+      //  console.log("Responce Order id:::",res)
       const orderId = res?.order?.id;
-      
+
       const amountInPaise = Math.round(Number(amount) * 100);
 
       if (!orderId) {
@@ -1531,8 +1530,8 @@ const CheckoutPage = ({navigation}) => {
         description: 'Namoh sundari Purchase',
         image:
           'https://media.istockphoto.com/id/486326115/photo/bull-and-bear.webp?b=1&s=170667a&w=0&k=20&c=HMb-bQbmU5-RVnU6NoPydkGjh0FEigULJcpwwA3z7g=',
-        currency:"INR",
-        key:"rzp_test_rA0MAFpr4GmwXK",
+        currency: 'INR',
+        key: 'rzp_test_rA0MAFpr4GmwXK',
         amount: amountInPaise,
         name: 'Namoh sundari E-Commerce',
         order_id: orderId,
@@ -1558,35 +1557,31 @@ const CheckoutPage = ({navigation}) => {
           razorpay_order_id: data?.razorpay_order_id,
           razorpay_payment_id: data?.razorpay_payment_id,
           razorpay_signature: data?.razorpay_signature,
-          amount:amount,
-          currency:"INR",
-          product_id:cartItemsToDisplay[0].productId
+          amount: amount,
+          currency: 'INR',
+          product_id: cartItemsToDisplay[0].productId,
         },
       );
       const verificationResult = verifyPaymentResponse.data;
       // console.log("Order Address::",verificationResult)
 
-      const CreateOrder = await axiosInstance.post(
-        '/web/create-order',
-        {
-          paymentMode:selectedPaymentMode,
-          paymentOrderId:paymentId,
-          orderStatus:"SUCCESS",
-          addressId:deliveryAddress?.id,
-          gst:cartSummary?.gst,
-          discount:0,
-          couponCode:"",
-          totalAmount:amount,
-          notes: "Ring the bell on arrival"
-        },
-      );
+      const CreateOrder = await axiosInstance.post('/web/create-order', {
+        paymentMode: selectedPaymentMode,
+        paymentOrderId: paymentId,
+        orderStatus: 'SUCCESS',
+        addressId: deliveryAddress?.id,
+        gst: cartSummary?.gst,
+        discount: 0,
+        couponCode: '',
+        totalAmount: amount,
+        notes: 'Ring the bell on arrival',
+      });
       const CreateOrderSuccess = CreateOrder.data;
-      console.log("Create order::::",CreateOrderSuccess)
-      
-      if (CreateOrderSuccess.message==="Payment verified successfully") {
+      console.log('Create order::::', CreateOrderSuccess);
+
+      if (CreateOrderSuccess.message === 'Payment verified successfully') {
         Alert.alert('Payment Successful!', verificationResult.message);
 
-    
         // Navigate to success screen, passing relevant details
         // navigation.navigate('OrderSuccessScreen', {
         //   paymentId: paymentId,
@@ -1609,7 +1604,7 @@ const CheckoutPage = ({navigation}) => {
     }
   };
 
-  const handlePlaceOrder = async (productId) => {
+  const handlePlaceOrder = async productId => {
     // console.log("Hello")
     const userId = await getUserData();
     // console.log(`User ID for order: ${JSON.stringify(userId.userId, null, 2)}`);
@@ -1666,9 +1661,9 @@ const CheckoutPage = ({navigation}) => {
           '/web/create-order',
           codPayload,
         ); // Use the provided endpoint
-        console.log("Cash on delevery responce:::",response)
+        console.log('Cash on delevery responce:::', response);
 
-        if (response.data.message==="Order created") {
+        if (response.data.message === 'Order created') {
           Alert.alert(
             'Order Placed',
             response.data.message ||
@@ -1676,7 +1671,7 @@ const CheckoutPage = ({navigation}) => {
           );
           // You might clear the cart locally or refetch cart data after successful order
           fetchCartData(false); // Refresh cart to show it's empty or updated
-          navigation.navigate('OrderSuccessScreen', {
+          navigation.navigate('ShoppingBag', {
             paymentMode: 'COD',
             orderId: response.data.orderId,
           }); // Pass backend order ID if returned
@@ -1685,8 +1680,7 @@ const CheckoutPage = ({navigation}) => {
         }
         const cart = await axiosInstance.get('web/get-orders');
         console.log('get cart data ', cart);
-      } 
-      else if (selectedPaymentMode === 'razorpay') {
+      } else if (selectedPaymentMode === 'razorpay') {
         console.log('Initiating Razorpay payment...');
         const paymentSuccess = await handleRazorpayPayment(
           cartSummary.totalAmount,
@@ -1925,7 +1919,7 @@ const CheckoutPage = ({navigation}) => {
 
         <TouchableOpacity
           style={styles.proceedButton}
-          onPress={()=>handlePlaceOrder()} // Call the main order placement function
+          onPress={() => handlePlaceOrder()} // Call the main order placement function
           disabled={
             isPaying ||
             isUpdatingQuantity ||
