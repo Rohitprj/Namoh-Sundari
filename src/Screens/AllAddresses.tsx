@@ -88,12 +88,12 @@ export default function AllAddresses({ navigation }) {
         <ScrollView style={styles.scrollView}>
           {addresses.map((address) => (
             <View key={address.id} style={styles.addressCard}>
-              <Text style={styles.name}>
+              {/* <Text style={styles.name}>
                 {address.fristname || address.lastname ? 
                   `${address.fristname || ''} ${address.lastname || ''}`.trim() 
                   : 'N/A'
                 }
-              </Text>
+              </Text> */}
               
               <Text>
                 {address.houseNo ? `${address.houseNo}, ` : ''}{address.street}

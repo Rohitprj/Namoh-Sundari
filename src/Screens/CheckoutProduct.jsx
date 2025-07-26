@@ -1665,9 +1665,9 @@ const CheckoutPage = ({navigation}) => {
 
         if (response.data.message === 'Order created') {
           Alert.alert(
-            'Order Placed',
-            response.data.message ||
-              'Your COD order has been placed successfully!',
+            'Thank you for your order',
+            // response.data.message ||
+            'Your order has been places successfully',
           );
           // You might clear the cart locally or refetch cart data after successful order
           fetchCartData(false); // Refresh cart to show it's empty or updated

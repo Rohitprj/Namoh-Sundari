@@ -1992,9 +1992,16 @@ const App = ({navigation}) => {
             <TouchableOpacity
               style={styles.headerAvatarContainer}
               onPress={() => navigation.navigate('ShoppingBag')}>
-              <Image
+              {/* <Image
                 source={require('../../assets/images/Profile.png')}
                 style={styles.logo}
+              /> */}
+
+              <Feather
+                size={26}
+                name="shopping-bag"
+                color="black"
+                style={{right: 7, bottom: 1}}
               />
             </TouchableOpacity>
           </View>

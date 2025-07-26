@@ -160,7 +160,7 @@ const ProductDetailsScreen = ({navigation, route}) => {
 
       console.log('add to cart response', response);
       if (response.data.success) {
-        Alert.alert('Success', 'Product added to cart!', [
+        Alert.alert("",'Product added to cart!', [
           {
             text: 'OK',
             // onPress: () => navigation.navigate('CheckoutProduct'),
