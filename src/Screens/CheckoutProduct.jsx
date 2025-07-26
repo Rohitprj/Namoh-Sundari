@@ -1758,7 +1758,7 @@ const CheckoutPage = ({navigation}) => {
             style={styles.backArrowIcon}
           />
         </TouchableOpacity>
-        <Text style={styles.headerTitle}>Checkout</Text>
+        <Text style={styles.headerTitle}>Cart</Text>
         <View style={{width: 24}} />
       </View>
 

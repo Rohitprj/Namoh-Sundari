@@ -15,7 +15,7 @@ export default function AllAddresses({ navigation }) {
 
       // THIS IS THE REAL API CALL using your imported axiosInstance
       const response = await axiosInstance.get("/web/get-address"); 
-      
+      console.log("Get all addresses",JSON.stringify(response.data,null,2))
       if (response.data.success) {
         setAddresses(response.data.addresses);
       } else {

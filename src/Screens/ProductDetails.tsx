@@ -166,7 +166,14 @@ const ProductDetailsScreen = ({navigation, route}) => {
             // onPress: () => navigation.navigate('CheckoutProduct'),
           },
         ]);
-      } else {
+      } 
+      else {
+        Alert.alert('Success', 'Product added to cart!', [
+          {
+            text: 'OK',
+            // onPress: () => navigation.navigate('CheckoutProduct'),
+          },
+        ]);
         navigation.navigate('CheckoutProduct');
       }
     } catch (error) {
