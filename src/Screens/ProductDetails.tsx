@@ -246,7 +246,7 @@ const ProductDetailsScreen = ({navigation, route}) => {
     return (
       <SafeAreaView style={styles.safeArea}>
         <View style={styles.loadingContainer}>
-          <ActivityIndicator size="large" color="#ff6600" />
+          <ActivityIndicator size="large" color="#01088c" />
           <Text style={{marginTop: 10}}>Loading product details...</Text>
         </View>
       </SafeAreaView>
@@ -672,7 +672,7 @@ const styles = StyleSheet.create({
     marginHorizontal: 3,
   },
   activePaginationDot: {
-    backgroundColor: '#ff6600', // Active dot color
+    backgroundColor: '#01088c', // Active dot color
   },
   detailsSection: {
     backgroundColor: '#fff',

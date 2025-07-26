@@ -210,7 +210,7 @@ const OtpVerify = ({navigation, route}) => {
           onPress={handleResendOtp}
           disabled={isResendDisabled || loadingResend}>
           {loadingResend ? (
-            <ActivityIndicator color="#FF6F00" />
+            <ActivityIndicator color="#01088c" />
           ) : (
             <Text
               style={[styles.loginLink, isResendDisabled && {color: '#ccc'}]}>

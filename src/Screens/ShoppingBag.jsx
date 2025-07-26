@@ -225,7 +225,7 @@ const ShoppingBag = ({navigation}) => {
     return (
       <SafeAreaView style={styles.safeArea}>
         <View style={styles.loadingContainer}>
-          <ActivityIndicator size="large" color="#ff6600" />
+          <ActivityIndicator size="large" color="#01088c" />
           <Text>Loading your shopping bag...</Text>
         </View>
       </SafeAreaView>

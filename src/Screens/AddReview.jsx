@@ -457,7 +457,7 @@ const styles = StyleSheet.create({
     // tintColor: '#ffc107', // Gold color for stars - not applicable for emoji directly
   },
   submitButton: {
-    backgroundColor: '#ff6600',
+    backgroundColor: '#01088c',
     borderRadius: 10,
     paddingVertical: 15,
     alignItems: 'center',

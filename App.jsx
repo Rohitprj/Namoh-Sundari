@@ -65,7 +65,7 @@ const TabNavigator = () => {
               break;
           }
 
-          const iconColor = focused ? 'red' : 'black';
+          const iconColor = focused ? '#f24a97' : 'black';
           const iconSize = route.name === 'Cart' ? 24 : 22;
 
           return (
@@ -88,7 +88,7 @@ const TabNavigator = () => {
             />
           );
         },
-        tabBarActiveTintColor: 'red',
+        tabBarActiveTintColor: '#f24a97',
         tabBarInactiveTintColor: 'black',
       })}>
       <Tab.Screen name="Home" component={ProductsPage} />
@@ -174,7 +174,7 @@ export default function App() {
   if (appContentLoading) {
     return (
       <View style={styles.loadingContainer}>
-        <ActivityIndicator size="large" color="#FF6F00" />
+        <ActivityIndicator size="large" color="#01088c" />
       </View>
     );
   }

@@ -2025,7 +2025,7 @@ const App = ({navigation}) => {
           {loadingCategories ? (
             <ActivityIndicator
               size="large"
-              color="#ff6600"
+              color="#01088c"
               style={{marginTop: 20}}
             />
           ) : errorCategories ? (

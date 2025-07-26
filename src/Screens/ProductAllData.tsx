@@ -1381,7 +1381,7 @@ export default function ProductAllData({navigation, route}) {
       {loadingProducts ? (
         <ActivityIndicator
           size="large"
-          color="#ff6600"
+          color="#01088c"
           style={{flex: 1, justifyContent: 'center', alignItems: 'center'}}
         />
       ) : errorProducts ? (

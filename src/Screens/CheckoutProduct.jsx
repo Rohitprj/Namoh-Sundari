@@ -1712,7 +1712,7 @@ const CheckoutPage = ({navigation}) => {
     return (
       <SafeAreaView style={styles.safeArea}>
         <View style={styles.loadingContainer}>
-          <ActivityIndicator size="large" color="#ff6600" />
+          <ActivityIndicator size="large" color="#01088c" />
           <Text style={{marginTop: 10}}>Loading cart and address...</Text>
         </View>
       </SafeAreaView>

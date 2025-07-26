@@ -353,7 +353,7 @@ const styles = StyleSheet.create({
     marginHorizontal: 3,
   },
   activePaginationDot: {
-    backgroundColor: '#ff6600', // Active dot color
+    backgroundColor: '#01088c', // Active dot color
   },
   detailsSection: {
     backgroundColor: '#fff',

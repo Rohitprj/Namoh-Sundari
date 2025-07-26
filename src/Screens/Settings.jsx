@@ -746,7 +746,7 @@ export default function Settings() {
   if (loadingProfile) {
     return (
       <View style={styles.loadingContainer}>
-        <ActivityIndicator size="large" color="#FF6F00" />
+        <ActivityIndicator size="large" color="#01088c" />
         <Text style={styles.loadingText}>Loading profile...</Text>
       </View>
     );
