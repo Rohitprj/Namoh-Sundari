@@ -957,7 +957,7 @@ const styles = StyleSheet.create({
     height: 60,
     borderRadius: 30, // Makes it circular
     marginRight: 15,
-    backgroundColor: '#FF6F00', // Placeholder background
+    backgroundColor: '#161881', // Placeholder background
   },
   profileInfo: {
     flex: 1,
@@ -997,7 +997,7 @@ const styles = StyleSheet.create({
     width: 24,
     height: 24,
     marginRight: 15,
-    tintColor: '#FF6F00', // Icon color
+    tintColor: '#161881', // Icon color
   },
   menuItemText: {
     fontSize: 16,
@@ -1029,7 +1029,7 @@ const styles = StyleSheet.create({
     borderRadius: 10, // Apply border radius to the button itself
   },
   logoutButtonText: {
-    color: '#FF6F00', // Orange text for logout
+    color: '#161881', // Orange text for logout
     fontSize: 16,
     fontWeight: 'bold',
     marginLeft: 15, // Space between icon and text
@@ -1056,7 +1056,7 @@ const styles = StyleSheet.create({
     backgroundColor: '#fff',
   },
   updateButton: {
-    backgroundColor: '#FF6F00',
+    backgroundColor: '#161881',
     paddingVertical: 15,
     paddingHorizontal: 40,
     borderRadius: 10,
@@ -1157,7 +1157,7 @@ const styles = StyleSheet.create({
     backgroundColor: '#ccc', // Grey for "No"
   },
   modalConfirmButton: {
-    backgroundColor: '#FF6F00', // Orange for "Yes"
+    backgroundColor: '#161881', // Orange for "Yes"
   },
   modalButtonText: {
     color: '#fff',

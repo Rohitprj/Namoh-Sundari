@@ -692,8 +692,8 @@ const styles = StyleSheet.create({
     backgroundColor: '#f9f9f9',
   },
   selectedSizeButton: {
-    borderColor: '#ff6600',
-    backgroundColor: '#fff0e6', // Light orange background
+    borderColor: '#161881',
+    backgroundColor: '#fff', // Light orange background
   },
   sizeButtonText: {
     fontSize: 14,
@@ -701,7 +701,7 @@ const styles = StyleSheet.create({
     color: '#555',
   },
   selectedSizeButtonText: {
-    color: '#ff6600',
+    color: '#161881',
   },
   // New styles for color selection
   colorButton: {
@@ -811,7 +811,7 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     backgroundColor: '#fff',
     borderWidth: 1,
-    borderColor: '#ff6600',
+    borderColor: '#161881',
     borderRadius: 10,
     paddingVertical: 15,
     marginRight: 10,
@@ -820,11 +820,11 @@ const styles = StyleSheet.create({
     width: 20,
     height: 20,
     resizeMode: 'contain',
-    tintColor: '#ff6600',
+    tintColor: '#161881',
     marginRight: 10,
   },
   addToCartText: {
-    color: '#ff6600',
+    color: '#161881',
     fontSize: 16,
     fontWeight: 'bold',
   },
@@ -833,7 +833,7 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     alignItems: 'center',
     justifyContent: 'center',
-    backgroundColor: '#ff6600',
+    backgroundColor: '#161881',
     borderRadius: 10,
     paddingVertical: 15,
     marginLeft: 10,

@@ -87,7 +87,7 @@ const styles = StyleSheet.create({
     lineHeight: 22,
   },
   button: {
-    backgroundColor: '#FF6F00', // Bright orange, matching typical UI
+    backgroundColor: '#161881', // Bright orange, matching typical UI
     paddingVertical: 15,
     borderRadius: 10,
     alignItems: 'center',

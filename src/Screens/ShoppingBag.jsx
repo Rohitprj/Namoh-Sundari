@@ -281,8 +281,8 @@ const ShoppingBag = ({navigation}) => {
             <RefreshControl
               refreshing={refreshing}
               onRefresh={handleRefresh}
-              colors={['#ff6600']} // Android
-              tintColor={'#ff6600'} // iOS
+              colors={['#161881']} // Android
+              tintColor={'#161881'} // iOS
             />
           }
           contentContainerStyle={styles.container}
@@ -316,8 +316,8 @@ const ShoppingBag = ({navigation}) => {
           <RefreshControl
             refreshing={refreshing}
             onRefresh={handleRefresh}
-            colors={['#ff6600']} // Android
-            tintColor={'#ff6600'} // iOS
+            colors={['#161881']} // Android
+            tintColor={'#161881'} // iOS
           />
         }
       />
@@ -529,7 +529,7 @@ const styles = StyleSheet.create({
   },
   selectCouponsText: {
     fontSize: 14,
-    color: '#ff6600',
+    color: '#161881',
     fontWeight: 'bold',
   },
   orderPaymentDetails: {
@@ -569,12 +569,12 @@ const styles = StyleSheet.create({
   },
   knowMoreText: {
     fontSize: 12,
-    color: '#ff6600',
+    color: '#161881',
     marginRight: 10,
   },
   applyCouponText: {
     fontSize: 14,
-    color: '#ff6600',
+    color: '#161881',
     fontWeight: 'bold',
   },
   deliveryFeeText: {
@@ -604,7 +604,7 @@ const styles = StyleSheet.create({
   orderTotalValue: {
     fontSize: 20,
     fontWeight: 'bold',
-    color: '#ff6600',
+    color: '#161881',
     marginBottom: 10,
   },
   emiRow: {
@@ -618,7 +618,7 @@ const styles = StyleSheet.create({
   },
   detailsText: {
     fontSize: 14,
-    color: '#ff6600',
+    color: '#161881',
     fontWeight: 'bold',
   },
 });

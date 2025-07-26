@@ -2008,12 +2008,12 @@ const styles = StyleSheet.create({
     fontWeight: '600',
   },
   browseButton: {
-    backgroundColor: '#ff6600',
+    backgroundColor: '#161881',
     paddingHorizontal: 25,
     paddingVertical: 12,
     borderRadius: 25,
     elevation: 3,
-    shadowColor: '#ff6600',
+    shadowColor: '#161881',
     shadowOffset: {width: 0, height: 4},
     shadowOpacity: 0.3,
     shadowRadius: 5,
@@ -2061,7 +2061,7 @@ const styles = StyleSheet.create({
   cartItemPrice: {
     fontSize: 15,
     fontWeight: '700',
-    color: '#ff6600',
+    color: '#161881',
     marginBottom: 8,
   },
   quantityControls: {
@@ -2131,7 +2131,7 @@ const styles = StyleSheet.create({
   infoBlockTitleEdit: {
     fontSize: 16,
     fontWeight: '600',
-    color: '#ff6600',
+    color: '#161881',
   },
   infoBlockContent: {
     flexDirection: 'row',
@@ -2180,7 +2180,7 @@ const styles = StyleSheet.create({
     backgroundColor: '#fdfdfd',
   },
   selectedOptionCard: {
-    borderColor: '#ff6600',
+    borderColor: '#161881',
     backgroundColor: '#fff7ed',
     borderWidth: 2,
   },
@@ -2200,7 +2200,7 @@ const styles = StyleSheet.create({
     alignItems: 'center',
   },
   radioButtonSelected: {
-    borderColor: '#ff6600',
+    borderColor: '#161881',
     backgroundColor: '#fff',
   },
   paymentIcon: {
@@ -2219,7 +2219,7 @@ const styles = StyleSheet.create({
     color: '#666',
   },
   mostPopularTag: {
-    backgroundColor: '#ff6600',
+    backgroundColor: '#161881',
     color: '#fff',
     fontSize: 10,
     fontWeight: 'bold',
@@ -2282,10 +2282,10 @@ const styles = StyleSheet.create({
   totalValue: {
     fontSize: 18,
     fontWeight: '700',
-    color: '#ff6600',
+    color: '#161881',
   },
   proceedButton: {
-    backgroundColor: '#ff6600',
+    backgroundColor: '#161881',
     borderRadius: 12,
     paddingVertical: 16,
     alignItems: 'center',
@@ -2293,7 +2293,7 @@ const styles = StyleSheet.create({
     marginTop: 10,
     marginBottom: 20,
     elevation: 5,
-    shadowColor: '#ff6600',
+    shadowColor: '#161881',
     shadowOffset: {width: 0, height: 5},
     shadowOpacity: 0.3,
     shadowRadius: 6,

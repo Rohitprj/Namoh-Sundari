@@ -1610,7 +1610,7 @@ const styles = StyleSheet.create({
   productPrice: {
     fontSize: 15,
     fontWeight: 'bold',
-    color: '#ff6600',
+    color: '#161881',
     marginBottom: 5,
   },
   ratingContainer: {
