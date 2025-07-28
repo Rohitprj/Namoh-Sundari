@@ -513,12 +513,10 @@ const ProductDetailsScreen = ({navigation, route}) => {
           </View>
         </View>
 
-        {/* <View style={styles.reviewsSection}>
+        <View style={styles.reviewsSection}>
           <View style={styles.reviewsHeader}>
-            
             <Text style={styles.reviewsTitle}>{totalReviewsCount} Reviews</Text>
             <View style={styles.reviewsOverallRating}>
-              
               <Text style={styles.reviewsOverallRatingText}>
                 {averageRating}
               </Text>
@@ -539,7 +537,6 @@ const ProductDetailsScreen = ({navigation, route}) => {
               />
             </TouchableOpacity>
           </View>
-
 
           <View style={styles.starRatingBreakdown}>
             {[5, 4, 3, 2, 1].map(star => {
@@ -582,7 +579,7 @@ const ProductDetailsScreen = ({navigation, route}) => {
               No reviews yet. Be the first to review!
             </Text>
           )}
-        </View> */}
+        </View>
       </ScrollView>
     </SafeAreaView>
   );

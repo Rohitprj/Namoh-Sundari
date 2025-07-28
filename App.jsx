@@ -94,7 +94,7 @@ const TabNavigator = () => {
       <Tab.Screen name="Home" component={ProductsPage} />
       <Tab.Screen name="Wishlist" component={Wishlist} />
       <Tab.Screen name="Cart" component={CheckoutProduct} />
-      {/* <Tab.Screen name="Search" component={Search} /> */}
+      <Tab.Screen name="Search" component={Search} />
       <Tab.Screen name="Profile" component={Settings} />
     </Tab.Navigator>
   );

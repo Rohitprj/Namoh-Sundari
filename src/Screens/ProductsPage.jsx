@@ -1947,9 +1947,9 @@ const App = ({navigation}) => {
 
   // Simplified handleCategoryPress to directly navigate with category ID
   const handleCategoryPress = item => {
-    console.log(`Navigating to products for category ID: ${item.id}`);
+    console.log(`Navigating to products for category ID: ${item.slug}`);
     // Navigate to 'ProductAllData' and pass the category 'id'
-    navigation.navigate('ProductAllData', {categoryId: item.id});
+    navigation.navigate('ProductAllData', {categoryId: item.slug});
   };
 
   const renderCategoryItem = ({item}) => {
@@ -2008,19 +2008,21 @@ const App = ({navigation}) => {
         </View>
 
         {/* Search Bar */}
-        <View style={styles.searchContainer}>
+        <TouchableOpacity
+          style={styles.searchContainer}
+          onPress={() => navigation.navigate('Search')}>
           <Feather
             size={20}
             name="search"
             color="lightgrey"
             style={{right: 4, bottom: 1}}
           />
-          <TextInput
+          {/* <TextInput
             style={styles.searchInput}
             placeholder="Search any product..."
             placeholderTextColor="#888"
-          />
-        </View>
+          /> */}
+        </TouchableOpacity>
 
         {/* Dynamic Categories Section */}
         <View style={styles.dynamicCategoriesSection}>
@@ -2128,6 +2130,9 @@ const styles = StyleSheet.create({
     marginLeft: 15,
   },
   searchContainer: {
+    paddingVertical: 12,
+    backgroundColor: '#fff',
+    borderRadius: 10,
     flexDirection: 'row',
     alignItems: 'center',
     backgroundColor: '#fff',
