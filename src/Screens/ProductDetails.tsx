@@ -160,21 +160,20 @@ const ProductDetailsScreen = ({navigation, route}) => {
 
       console.log('add to cart response', response);
       if (response.data.success) {
-        Alert.alert("",'Product added to cart!', [
+        Alert.alert('', 'Product added to cart!', [
           {
             text: 'OK',
             // onPress: () => navigation.navigate('CheckoutProduct'),
           },
         ]);
-      } 
-      else {
+      } else {
         Alert.alert('Success', 'Product added to cart!', [
           {
             text: 'OK',
             // onPress: () => navigation.navigate('CheckoutProduct'),
           },
         ]);
-        navigation.navigate('CheckoutProduct');
+        // navigation.navigate('CheckoutProduct');
       }
     } catch (error) {
       console.error('Error adding product to cart:', error);
@@ -513,7 +512,6 @@ const ProductDetailsScreen = ({navigation, route}) => {
             </TouchableOpacity>
           </View>
         </View>
-
 
         {/* <View style={styles.reviewsSection}>
           <View style={styles.reviewsHeader}>
